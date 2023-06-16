@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style type="text/css">
+        div#area{
+            font: normal 20pt Arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="area" onclick ="clicar()" onmouseenter="entrada()" onmouseout="saida()">Interaja...</div> **********  não precisamos adicionar dentro da div, e só colocarmos os observadores dentro do script ex: a.addEventListiner('click', clicar) -->
+
+    <div id="area">Interaja...</div>
+
+           
+    <script>
+             
+
+             var m = window.document.getElementById('area') 
+             m.addEventListener('click', clicar)
+             m.addEventListener('mouseenter', entrada)
+             m.addEventListener('mouseout', saida)
+
+
+
+
+              function clicar() {
+                m.style.color = 'red'
+                m.style.fontFamily = 'Arial'
+                m.style.border = '2px solid red'
+                m.style.textDecoration = 'underline'
+                m.innerText = 'clicou'
+                m.style.textAlign = 'center'
+              }
+              function entrada() {
+                m.innerText = 'entrou'
+                m.style.textAlign = 'center'
+                m.style.color ='blue'
+                m.style.fontSize ='30px'
+              }
+              function saida() {
+                 m.innerText = 'saida'
+                 m.style.color = 'orange'
+                 m.style.textDecoration = 'underline'
+                 m.style.textAlign = 'center'
+                 
+              }
+    </script>
+</body>
+</html>
