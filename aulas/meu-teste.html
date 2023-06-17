@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de produtos</title>
+</head>
+<body>
+    <h1>Pesquise os produtos para a sua casa!</h1>
+    <input type="search" placeholder="Qual produto deseja.." id="pesq" name="pesq">
+    <input id="valor" name="valor" type="number"> 
+    <input type="submit" value="Comprar" onclick="compra()">
+
+    </br>
+    <div id="total">Valor do produto...</div>
+     
+    <script>
+         function compra () {
+            var panela = window.document.getElementById('pesq')
+            var pesq = window.document.querySelector('input#valor')
+            var tot = window.document.getElementById('total')
+
+            var panela = String(panela.value)
+            var pesq = Number('500')
+            
+            var cal = panela + pesq
+
+            tot.innerHTML = `O valor da ${panela} é de ${pesq}`
+
+         }
+    </script>
+
+</body>
+</html>
