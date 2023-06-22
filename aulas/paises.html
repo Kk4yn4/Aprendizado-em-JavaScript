@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sou desse lugar</title>
+</head>
+<body>
+    
+    <h1>Lugares do mundo</h1>
+    De que País você é:<input type="text" name="txtpais" id="txtpais">
+    <input type="submit" value="Buscar nacionalidade." id="butnac" onclick="pesquisar()">
+    <div id="res"></div>
+
+        <script>
+            function pesquisar() {
+                var pais = window.document.querySelector('input#txtpais')
+                var res = window.document.querySelector('div#res')
+                var lugar = String(pais.value)
+
+                if (lugar == 'Brasil') {
+                    res.innerHTML += 'Brasileiro'
+                }
+                if (lugar == 'EUR') {
+                    res.innerHTML += 'Américano'
+                }
+                if (lugar == 'Japão') {
+                    res.innerHTML += 'Japones'
+                }
+                if (lugar == 'França') {
+                    res.innerHTML += 'Frances'
+                }
+            }
+        </script>
+
+</body>
+</html>
