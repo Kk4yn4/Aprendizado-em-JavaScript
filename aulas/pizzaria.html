@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<style type="text/css">
+    body{
+        background-image: linear-gradient(to left , rgb(231, 156, 70),rgb(252, 0, 76));
+    }
+    div#tudo{
+        margin-left: 820px;
+        margin-top: 150px;
+    }
+    input#textsabor{
+        position: absolute;
+        margin-left: -360px;
+        margin-top: 250px;
+        width: 350px;
+        height: 25px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.452) 5px 5px 5px;
+        
+    }
+    ul{      
+        display: inline-block;
+        list-style: none; 
+         
+    }
+    li{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   div#tamanhos{
+    margin-left: 770px;
+    margin-top: 150px;
+   }
+
+   input#pequena{
+     width: 20px;
+     height: 30px;
+   }
+   input#media{
+     width: 20px;
+     height: 30px;
+   }
+   input#grande{
+     width: 20px;
+     height: 30px;    
+   }
+   
+   input#pedir{
+    width: 80px;
+    height: 25px;
+    background-color: rgb(255, 188, 42);
+    border-radius: 360px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1090px;
+    margin-top: 90px;
+    box-shadow: rgba(0, 0, 0, 0.418) 6px 5px 5px;
+   }
+
+   div#res{
+    width: 350px;
+    height: 100px;
+    background-color: white;
+    margin-left: 814px;
+    margin-top: 50px;
+   }
+</style>
+       
+<body>
+     <div id="tudo">
+        <img src="https://greenpng.com/wp-content/uploads/2022/12/Desenho-da-palavra-pizza-1024x585.png" alt="" width="350px">
+        <input type="text" name="textsabor" id="textsabor" placeholder=" &#128269; Faça seu pedido...">
+    </div>
+ 
+   <!--<div id="tamanhos">
+    <ul>
+        <li><input type="checkbox" id="pequena" name="pequena">Pequena</li>
+
+    </ul>
+
+    <ul>
+        <li><input type="checkbox" id="media" name="media">Média</li>
+
+    </ul>
+
+    <ul>
+        <li><input type="checkbox" id="grande" name="grande">Grande</li>
+
+    </ul>
+</div>--> 
+<input type="submit" value="PEDIR!" onclick="pedir()" id="pedir">
+
+<div id="res">
+</div>
+
+<script>
+    function pedir() {
+        var sabor = window.document.querySelector('input#textsabor')
+       // var peq = window.document.querySelector('input#pequena')
+        //var peq = window.document.querySelector('input#media')
+        //var peq = window.document.querySelector('input#grande')
+        var res = window.document.querySelector('div#res')
+        
+        var esco = String(sabor.value)
+       // var pe = Object(peq.value)
+
+
+        if(esco == 'calabresa') {
+           res.innerHTML += 'Pizza de calabresa, valor R$34,00'
+        }
+    }
+</script>
+</body>
+</html>
