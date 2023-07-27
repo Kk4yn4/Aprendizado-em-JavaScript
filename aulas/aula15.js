@@ -8,7 +8,7 @@ for(var pos in valores){
     num.sort()
     console.log(`${num}`)
    
-    let pos = num.indexOf(4)
+    let pos = num.indexOf(10)
     
 
     if(pos == -1){
