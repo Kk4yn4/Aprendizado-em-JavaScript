@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo do IMC</h1>
+    </header>
+    <section>
+       <p>NOME: </p><input type="text" id="nometxt">
+       <p>SOBRENOME:</p> <input type="text" id="sobrentxt">
+       <p>IDADE: </p><input type="number" id="idadetxt">
+       <P>PESO: </P><input type="number" id="pesotxt">
+       <P>ALTURA: </P><input type="number" id="alturatxt">
+
+       <input type="button" value="calcular" onclick="finalizar()" id="calc">
+
+      
+    </section>
+     <div id="res">
+      Cuide da sua alimentação e tenha uma vida saudável.
+     
+       </div>
+       <div id="restpeso">Preencha o formulário ao lado e descubra seu IMC</div>
+       <div id="chamadadica"> cuidados adicionais
+        <table>
+            <tr>
+                <td>Classificação </td>
+                <td>Obesidade</td>
+                <td>(grau)</td>
+            </tr>
+
+            <tr>  
+                <td>Menor que 18,5</td>
+                <td>Magreza </td>
+                <td>0</td>
+            </tr>
+
+            <tr>  
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal </td>
+                <td>0</td>
+            </tr>
+
+            <tr>  
+                <td>Entre 25,0 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td>I</td>
+            </tr>
+
+            <tr>  
+                <td>Entre 30,0 e 39,9</td>
+                <td>Obesidade</td>
+                <td>II</td>
+            </tr>
+
+            <tr>  
+                <td>Maior que 40,0</td>
+                <td>Obesidade Grave </td>
+                <td></td>
+            </tr>
+
+        </table>
+       </div>
+       <div id="resdica">Preencha o formulário e descubra quantos ml de água você precisa beber por dia!</div>
+
+       <footer id="rodape"> <p>&copy; Os dados para a realização dos cálculos foram retirados da internet</p></footer>
+    <script src="/Aprendizado-em-JavaScript/IMC/scriptimc.js"></script>
+</body>
+</html>

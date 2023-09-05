@@ -1,0 +1,112 @@
+@charset 'UTF-8';
+
+body{
+    background-color: rgb(230, 231, 231);
+}
+header{
+    background-color: rgba(177, 30, 30, 0.842);
+    padding: 10px;
+    margin-top: -20px;
+    margin: -20px -8px;
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+   background-color: rgba(112, 22, 22, 0.842);
+   width: 500px;
+   height: 480px;
+   margin-left: 100px;
+   margin-top: 50px;
+}
+p{
+   text-align: center;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+}
+input{
+ margin-left: 150px;
+ width: 200px;
+ height: 20px;
+}
+input#calc{
+    position: absolute;
+    margin-top: 55px;
+    width: 70px;
+    height: 25px;
+    margin-left: -130px;
+}
+div#res{
+   position: absolute;
+   background-color: rgba(112, 22, 22, 0.842);
+   width: 500px;
+   height: 480px;
+   margin-left:700px;
+   margin-top: -480px;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+   text-shadow: rgba(255, 255, 255, 0.37) 1px 2px 5px ;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+}
+div#restpeso{
+    width: 400px;
+    height: 200px;
+   position: absolute;
+   margin-top: -380px;
+   margin-left: 745px;
+   color: white;
+   text-align: justify;
+   font-size: 30px;
+   padding: 6px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgba(112, 22, 22, 0.411);
+   
+}
+div#chamadadica{
+    position: absolute;
+    background-color: rgba(112, 22, 22, 0.842);
+    width: 500px;
+    height: 480px;
+    margin-left:1300px;
+    margin-top: -480px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: rgba(255, 255, 255, 0.37) 1px 2px 5px ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;;
+   
+}
+div#resdica{
+    width: 400px;
+    height: 220px;
+   position: absolute;
+   margin-top: -250px;
+   margin-left:1350px;
+   color: white;
+   text-align: justify;
+   font-size: 20px;
+   padding: 6px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgba(112, 22, 22, 0.4)
+}
+table td{
+    border: 2px solid rgb(192, 189, 189);
+    color: rgb(153, 255, 0);
+    
+}
+table{
+    margin-left: 20px;
+}
+footer#rodape p{
+    text-align: center;
+    margin-top: 200px;
+    text-decoration: underline;
+    color: rgba(109, 106, 106, 0.425);
+}
